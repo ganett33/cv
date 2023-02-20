@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+/* ---------------- general ---------------*/
+
+:root {
+  --color-black: #1a0000;
+  --color-beige: #f5edce;
+  --color-blue: #89c4e1;
+  --color-green: #4d873e;
+}
+
+body {
+  margin: 0;
+  background: var(--color-beige);
+  font-family: 'VT323', monospace;
+  color: var(--color-beige);
+}
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+}
+li,
+a {
+  color: var(--color-beige);
+  text-decoration: none;
+  list-style: none;
+}
+a:hover {
+  color: var(--color-blue);
+  cursor: pointer;
+  transition: all 0.5s ease-out;
+  scale: 1.2;
+}
+hr {
+  border-top: 5px dotted var(--color-black);
+  width: 50px;
+  margin-bottom: 50px;
+}
+
+/* ---------------- nav ---------------*/
+nav {
+  background: var(--color-black);
+  color: var(--color-beige);
+  padding: 10px;
+}
+.nav_content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto 200px;
+}
+.logo {
+  margin-left: 100px;
+  width: 60px;
+  height: 60px;
+  background: var(--color-beige);
+  border: 2px solid var(--color-black);
+  border-radius: 50%;
+}
+.nav_links {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-items: space-between;
+}
+.nav_link {
+  font-size: 1.5rem;
+}
+li.nav_link {
+  color: var(--color-blue);
+  cursor: pointer;
+  transition: all 0.5s ease-out;
+  scale: 1.2;
+}
+
+/* ---------------- hero ---------------*/
+.hero {
+  position: relative;
+  text-align: center;
+  background: var(--color-blue);
+  padding-bottom: 0;
+}
+
+h1.title {
+  font-size: 5.625rem;
+  font-weight: 400;
+  padding-top: 100px;
+}
+p.title {
+  font-size: 2.5rem;
+  margin-top: 10px;
+}
+
+.title {
+  text-align: center;
+}
+
+.mountain {
+  width: 50%;
+  padding-bottom: 0;
+  margin-bottom: -3px;
+}
+.cloud {
+  position: absolute;
+  width: 10%;
+  overflow: hidden;
+}
+.cloud_top {
+  right: 300px;
+  top: 50px;
+}
+
+.cloud_middle {
+  left: 300px;
+  top: 300px;
+}
+.cloud_bottom {
+  top: 500px;
+  right: 250px;
+}
+
+/* ---------------- main ---------------*/
+.main {
+  width: 60%;
+  margin: 50px auto;
+  color: var(--color-black);
+}
+
+.skills_top,
+.contact_top {
+  display: inherit;
+  flex-direction: row;
+  padding: 25px 0;
+  justify-content: center;
+  align-items: baseline;
+}
+.skills_title,
+.contact_title {
+  font-size: 3rem;
+  font-weight: 600;
+  margin-left: 15px;
+}
+
+.skill_name,
+.contact_name {
+  color: var(--color-green);
+  font-size: 2.5rem;
+}
+
+.profile_content,
+.skills_content,
+.contact_content {
+  font-size: 1.5rem;
+  padding-bottom: 20px;
+}
+
+.skills,
+.contact_me {
+  display: flex;
+  flex-direction: column;
+}
+
+.skill_row,
+.contact_row {
+  padding-bottom: 50px;
+}
+
+.badge {
+  width: 25px;
+  height: 25px;
+}
+.icon {
+  width: 100px;
+}
+.icon_right {
+  float: left;
+  padding-right: 30px;
+}
+.icon_left {
+  float: right;
+  padding-right: 30px;
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 50px;
+}
+.profile_name {
+  position: relative;
+  display: inline;
+  font-size: 3rem;
+  text-align: center;
+}
+.profile_image {
+  width: 150px;
+  background: var(--color-beige);
+  border: 2px solid var(--color-black);
+  border-radius: 50%;
+  margin: 10px;
+}
+.contact_me {
+  background: white;
+  border: 2px dashed var(--color-black);
+}
+.contact_row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.btn {
+  margin-top: 10px;
+  background: #1a0000;
+  padding: 10px;
+  font-size: 2rem;
+  border: 1px solid black;
+  color: var(--color-beige);
+}
+.btn:hover {
+  cursor: pointer;
+  background: var(--color-blue);
+  color: var(--color-black);
+  transition: all 0.5s ease-out;
+  scale: 1.2;
+}
+/* ---------------- footer ---------------*/
+
+.footer {
+  background: var(--color-black);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+}
+.footer_links {
+  padding: 0 10px;
+  font-size: 1.3rem;
+  display: flex;
+  flex-direction: row;
+  padding: 5px 0;
+}
+.footer_link {
+  padding: 0 10px;
+}
+.footer_content {
+  font-size: 1.3rem;
+  position: static;
+  display: block;
+  padding: 5px 0;
+  color: var(--color-blue);
+}
